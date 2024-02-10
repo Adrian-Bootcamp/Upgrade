@@ -1,0 +1,88 @@
+<!-- Crea tu primer formulario -->
+
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+	  <meta charset="UTF-8">
+	  <title>Formulario de pruebas.</title>
+	</head>
+	<body>
+    <h1>  Formulario de pruebas.
+      </h1>
+    <h2> Por favor rellene todos los campos antes de enviarlo.
+      </h2>
+		<form action="/">
+        <fieldset>
+          <legend><h3>Informacion pesonal</h3></legend>
+      <ul>
+      <label for="nombre">
+        <p><b>
+          Nombre
+          </p></b></label>
+        <input id="nombre" name="nombre" type="text">
+      
+    <label for="apellido">
+      <p><b>
+        Apellidos
+        </p></b>
+      <input id="apellido" name="apellido" type="text">
+      </label>
+    <label for="edad">
+      <p><b>
+        Edad
+        </p></b>
+      <input id="edad" name="edad" type="number">
+      </label>
+    </fieldset>
+  <fieldset>
+    <legend><b><h3>Dirección</h3></b></legend>
+      <ul>
+        <p><label for="direccion"><b>Calle</b></label>
+        <p><input id="direccion" type="text" placeholder="Introduce la dirección">
+        <p><label for="cp"><b>Codigo postal</b>
+            <p><input id="cp" type="number" placeholder="Codigo postal" min="00000" max="99999">
+          </label>
+    
+    </fieldset>
+    <input type="submit" value="Enviar formulario"></input>
+    <button>Enviar opcion 2</button>
+      </ul>
+<h3>Otro tipo de formulario</h3>
+    <fieldset>
+      <legend><b><h3>Datos personales</h3></b></legend>
+      <ul>
+      <input type="text" placeholder="Nombre completo" minlength="8" maxlength="32" required>
+      <p><input type="email" placeholder="Correo electronico." minlength="8" maxlength="32" required>
+      <p><input type="number" placeholder="Edad" min="18" max="99">
+      <p><label for="fecha"><h4>Fecha de nacimiento</h4></label>
+      <p><input id="fecha" type="date" required>
+      <h4>Genero:</h4>
+      <p><input id="masculino" name="genero" type="radio" required>
+      <label for="masculino">Masculino</label>
+      <p><input  id="femenino" name="genero" type="radio">
+      <label for="femenino">Femenino</label>
+      <p><input id="neutro" name="genero" type="radio">
+      <label for="neutro">Prefiero no decirlo</label>
+      <p><label for="imagen"><h4>Imagen de usuario.</h4></label>
+      <p><input id="imagen" type="file">
+      <p><input type="text" placeholder="Nombre de usuario" minlength="5" maxlength="16" required>
+      <p><input type="password" placeholder="Contraseña"  required pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$" id="contraseña1">
+      <p><input type="password" placeholder="Confirmacion de contraseña" required pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$" id="contraseña2">
+        <p><label for="observacion">¿Algo que añadir?</label>
+        <p><textarea name="Observaciones" id="observacion" cols="30" rows="2" placeholder="Escribe lo que quieras añadir aqui. No es obligatorio."></textarea>
+      <p><input id="condiciones" type="checkbox" required>
+      <label for="condiciones"><b>Acepto</b> las condiciones de uso sobre el trato de mis datos.</label>
+        <p><label for="lectura">¿Has leido las condiones?</label>
+      <select name="Lectura" id="lectura" required>
+        <option value=""></option>
+        <option value="si">Si</option>
+        <option value="no">No</option>
+      </select>
+      <p><input type="reset">
+      <input type="submit">
+      </ul>
+      </fieldset>
+
+		</form>
+	</body>
+</html>
